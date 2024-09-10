@@ -1,0 +1,108 @@
+@font-face {
+  font-family: "Lexend";
+  src: url(/fonts/Lexend-Regular.ttf);
+}
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: #fbf6f6;
+  width: 100%;
+  font-family: "Lexend", sans-serif;
+}
+
+main {
+  max-width: 450px;
+  display: block;
+  margin: 4rem 1rem;
+  background-color: #fff;
+  border-radius: 20px;
+  box-shadow: 3px 3px 3px 2px skyblue;
+  overflow-y: auto;
+}
+main .hero-section .hero-image img {
+  width: 100%;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+}
+main .summary-container {
+  text-align: center;
+  margin: 0.75rem;
+  padding: 0.75rem;
+}
+main .summary-container p {
+  padding: 0.75rem;
+  font-size: 16px;
+  opacity: 0.7;
+}
+main .plan-container {
+  margin: 0.75rem;
+  background-color: #fbf6f6;
+  border-radius: 20px;
+}
+main .plan-container .price-container {
+  margin: 0.75rem;
+  padding: 0.75rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+main .plan-container .price-container p span {
+  opacity: 0.6;
+}
+main .plan-container .price-container a {
+  font-size: 16px;
+}
+main .plan-container .price-container a:hover {
+  text-decoration: none;
+}
+main .payments {
+  margin: 0.75rem;
+  text-align: center;
+}
+main .payments .btn-payment {
+  width: 100%;
+  margin: 0.75rem 0;
+  padding: 1.2rem 0;
+  background-color: hsl(223, 80%, 52%);
+  color: #fff;
+  font-size: 16px;
+  border: 0;
+  border-radius: 10px;
+}
+main .payments .btn-payment:hover {
+  cursor: pointer;
+  color: aqua;
+}
+main .payments .btn-cancel {
+  text-decoration: none;
+  color: black;
+  opacity: 0.6;
+  font-size: 16px;
+  margin-bottom: 0.75rem;
+}
+main .payments .btn-cancel:hover {
+  color: darkgreen;
+  opacity: 1;
+}
+main .attribution {
+  margin: 3rem 0.75rem;
+  text-align: center;
+}
+main .attribution p a {
+  font-size: 13px;
+  color: green;
+}
+main .attribution p a:hover {
+  text-decoration: none;
+}
+
+@media screen and (min-width: 490px) {
+  body {
+    padding: 4rem 0;
+    position: relative;
+  }
+  body main {
+    margin: auto;
+  }
+}/*# sourceMappingURL=style.css.map */

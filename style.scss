@@ -1,0 +1,132 @@
+//variables
+$primary: hsl(223, 80%, 52%);
+$secondary: #808080;
+$base-padding: 0.75rem;
+$base-margin: 0.75rem;
+$base-border: 1px;
+$base-border-radius: 20px;
+$base-font-size: 14px;
+
+@font-face {
+    font-family: 'Lexend';
+    src: url(/fonts/Lexend-Regular.ttf);
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #fbf6f6;
+    width: 100%;
+    font-family: 'Lexend', sans-serif;
+}
+
+main {
+    max-width: 450px;
+    display: block;
+    margin: 4rem 1rem;
+    background-color: #fff;
+    border-radius: $base-border-radius;
+    box-shadow: 3px 3px 3px 2px skyblue;
+    overflow-y: auto;
+    .hero-section {
+        .hero-image {
+            img {
+                width: 100%;
+                border-top-left-radius: $base-border-radius;
+                border-top-right-radius: $base-border-radius;
+            }
+        }
+    }
+
+    .summary-container {
+        text-align: center;
+        margin: $base-margin;
+        padding: $base-padding;
+        p {
+            padding: $base-padding;
+            font-size: 16px;
+            opacity: .7;
+        }
+    }
+
+    .plan-container {
+        margin: $base-margin;
+        background-color: #fbf6f6;
+        border-radius: $base-border-radius;
+        .price-container {
+            margin: $base-margin;
+            padding: $base-padding;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            p {
+                span {
+                    opacity: .6;
+                }
+            }
+            a {
+                font-size: 16px;
+                &:hover {
+                    text-decoration: none;
+                }
+            }
+        }
+    }
+
+    .payments {
+        margin: $base-margin;
+        text-align: center;
+        .btn-payment {
+            width: 100%;
+            margin: $base-margin 0;
+            padding: 1.2rem 0;
+            background-color: $primary;
+            color: #fff;
+            font-size: 16px;
+            border: 0;
+            border-radius: 10px;
+            &:hover {
+                cursor: pointer;
+                color: aqua;
+            }
+        }
+        .btn-cancel {
+            text-decoration: none;
+            color: black;
+            opacity: .6;
+            font-size: 16px;
+            margin-bottom: $base-margin;
+            &:hover {
+                color: darkgreen;
+                opacity: 1;
+            }
+        }
+    }
+    .attribution {
+        margin: 3rem $base-margin;
+        text-align: center;
+        p {
+            a {
+                font-size: 13px;
+                color: green;
+                &:hover {
+                    text-decoration: none;
+                }
+            }
+        }
+    }
+}
+
+
+@media screen and (min-width: 490px) {
+    body {
+        padding: 4rem 0;
+        position: relative;
+        main {
+            margin: auto;
+            
+        }
+    }
+
+}
